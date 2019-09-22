@@ -1,0 +1,224 @@
+body {
+	margin: auto;
+	font-family: "Roboto Condensed", sans-serif;
+    height: auto;
+}
+
+#container {
+    background: url("../Images/background-site_241919.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: block;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    width: 750px;
+    height: 50px;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 800;
+    font-size: 48pt;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    height: 30%;
+    width: 25%;
+    font-size: 2.5vmax;
+    justify-content: space-evenly;
+}
+
+.link-holder {
+    margin: .5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.link-holder a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    left: 25px;
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: rgb(53, 156, 240);
+    cursor: pointer;
+}
+
+.selected {
+	border: 5px #ccc solid;
+	border-radius: 15px;
+}
+
+#main-content {
+    position: absolute;
+    top: 30vh;
+    right: 20vw;
+    height: 50vh;
+    width: 40vw;
+}
+
+.form-content {
+    height: 100%;
+    width: 100%;
+    margin: 2.5%;
+	padding: 2%;
+	flex-grow: 1;
+	flex-basis: 16%;  
+	display: flex; /* so child elements can use flexbox stuff too! */
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid #6d6d6d;
+	border-radius: 5px;
+	box-shadow: 3px 5px 6px 3px #19191965;
+	background-color: #effffb83;
+}
+
+form {
+    width: 30vw;
+}
+
+.form-input {
+	margin: 8px 0 4px 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	flex-direction: column;
+} 
+
+.form-input input {
+	margin-top: 1%;
+	height: 2rem;
+}
+
+#button-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 7%;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+button {
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 10vw;
+    height: 5vh;
+    font-weight: bolder;
+	font-size: 1.5rem;
+}
+  
+button:hover {
+	opacity: 0.8;
+}
+
+input[type="submit"]{
+    margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 10vw;
+    height: 5vh;
+    font-weight: bolder;
+	font-size: 1.5rem;
+}
+
+input[type="submit"]:hover{
+    opacity: 0.8;
+}
+
+.clear-btn {
+   	background-color: #dd51e2;
+	color: white;
+}
+
+.submit-btn {
+    background-color: #6fa3e7;
+	color: white;
+}
+
+.form-search {
+    margin: 8px 0 4px 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-search input {
+    display: inline-block;
+    width: 90%;
+    margin: 0;
+	height: 2rem;
+}
+
+.form-search button {
+    display: inline-block;
+    margin: 0;
+    height: 2.35rem;
+    width: 10vw;
+    margin: 0;
+}
+
+#search-result {
+    display: flex;
+	flex-wrap: wrap;
+}
+
+.empresa-show {
+ 	margin: 2.5%;
+	padding: 2%;
+	flex-grow: 1;
+	flex-basis: 16%;  
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid #6d6d6d;
+	border-radius: 5px;
+	box-shadow: 3px 5px 6px 3px #19191965;
+	background-color: #effffb83;
+}
+
+/* Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
